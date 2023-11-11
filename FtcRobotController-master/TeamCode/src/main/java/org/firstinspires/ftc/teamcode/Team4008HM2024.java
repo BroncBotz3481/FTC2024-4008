@@ -11,19 +11,19 @@ import com.qualcomm.robotcore.hardware.NormalizedRGBA;
 import com.qualcomm.robotcore.hardware.SwitchableLight;
 
 public class Team4008HM2024 {
-    public DcMotor DriveRightBack = null;
-    public DcMotor DriveLeftBack = null;
+    //public DcMotor DriveRightBack = null;
+    //public DcMotor DriveLeftBack = null;
     public DcMotor DriveLeftFront = null;
     public DcMotor DriveRightFront = null;
 
-    public DcMotor Turret = null;
+    /*public DcMotor Turret = null;
     public DcMotor Elevator = null;
 
     public DcMotor Arm = null;
 
     public Servo IntakeLeft = null;
 
-    public NormalizedColorSensor ColorSensor = null;
+    public NormalizedColorSensor ColorSensor = null;*/
 
 
 
@@ -38,8 +38,8 @@ public class Team4008HM2024 {
         hwMap = hardwareMap;
         DriveLeftFront = hwMap.get(DcMotor.class,"DriveLeftFront");
         DriveRightFront = hwMap.get(DcMotor.class,"DriveRightFront");
-        DriveLeftBack = hwMap.get(DcMotor.class,"DriveLeftBack");
-        DriveRightBack = hwMap.get(DcMotor.class,"DriveRightBack");
+       // DriveLeftBack = hwMap.get(DcMotor.class,"DriveLeftBack");
+       // DriveRightBack = hwMap.get(DcMotor.class,"DriveRightBack");
         //   Lights = hwMap.get(RevBlinkinLedDriver.class,"Lights");
 
         DriveLeftFront.setDirection(DcMotor.Direction.FORWARD);
@@ -50,7 +50,7 @@ public class Team4008HM2024 {
         DriveRightFront.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         DriveRightFront.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
 
-        DriveLeftBack.setDirection(DcMotor.Direction.FORWARD);
+       /* DriveLeftBack.setDirection(DcMotor.Direction.FORWARD);
         DriveLeftBack.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         DriveLeftBack.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
 
@@ -72,7 +72,7 @@ public class Team4008HM2024 {
 
         Arm = hwMap.get(DcMotor.class, "Arm");
 
-        ColorSensor = hwMap.get(NormalizedColorSensor.class, "sensor");
+        ColorSensor = hwMap.get(NormalizedColorSensor.class, "sensor");*/
 
     }
 }
