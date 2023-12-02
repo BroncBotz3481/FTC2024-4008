@@ -39,11 +39,11 @@ public class Team4008TeleOp2024 extends LinearOpMode {
             boolean speedSlow = gamepad1.right_bumper;
             double mag = speedSlow ? 0.5 : 1.0;
 
-            double leftAxis = -gamepad1.left_stick_y;
-            double rightAxis = -gamepad1.right_stick_y;
+            double leftAxis = gamepad1.left_stick_y;
+            double rightAxis = gamepad1.right_stick_y;
 
-            double leftPower = -leftAxis;
-            double rightPower = rightAxis;
+            double leftPower = rightAxis;
+            double rightPower = leftAxis;
 
             robot.DriveLeftFront.setPower(leftPower * mag);
             robot.DriveRightFront.setPower(rightPower * mag);
