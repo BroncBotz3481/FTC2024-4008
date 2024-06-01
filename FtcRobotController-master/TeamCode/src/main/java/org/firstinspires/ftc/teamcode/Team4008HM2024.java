@@ -16,6 +16,12 @@ public class Team4008HM2024 {
     public DcMotor DriveLeftFront = null;
     public DcMotor DriveRightFront = null;
 
+    public DcMotor armMotor = null;
+    public DcMotor armMotor2 = null;
+
+    public CRServo intakeL = null;
+
+    public CRServo intakeR = null;
     /*public DcMotor Turret = null;
     public DcMotor Elevator = null;
 
@@ -38,6 +44,9 @@ public class Team4008HM2024 {
         hwMap = hardwareMap;
         DriveLeftFront = hwMap.get(DcMotor.class,"DriveLeftFront");
         DriveRightFront = hwMap.get(DcMotor.class,"DriveRightFront");
+
+        armMotor = hwMap.get(DcMotor.class,"armMotor");
+        armMotor2 = hwMap.get(DcMotor.class,"armMotor");
        // DriveLeftBack = hwMap.get(DcMotor.class,"DriveLeftBack");
        // DriveRightBack = hwMap.get(DcMotor.class,"DriveRightBack");
         //   Lights = hwMap.get(RevBlinkinLedDriver.class,"Lights");
@@ -49,6 +58,17 @@ public class Team4008HM2024 {
         DriveRightFront.setDirection(DcMotor.Direction.REVERSE);
         DriveRightFront.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         DriveRightFront.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+
+        armMotor.setDirection(DcMotor.Direction.FORWARD);
+        armMotor.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+        armMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+
+        armMotor2.setDirection(DcMotor.Direction.REVERSE);
+        armMotor2.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+        armMotor2.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+
+        intakeL = hwMap.get(CRServo.class, "intakeL");
+        intakeR = hwMap.get(CRServo.class, "intakeR");
 
        /* DriveLeftBack.setDirection(DcMotor.Direction.FORWARD);
         DriveLeftBack.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
