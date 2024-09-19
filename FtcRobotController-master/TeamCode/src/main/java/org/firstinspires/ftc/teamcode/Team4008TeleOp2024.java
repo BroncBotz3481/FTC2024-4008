@@ -21,8 +21,8 @@ public class Team4008TeleOp2024 extends LinearOpMode {
         robot.DriveRightFront.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         robot.DriveLeftFront.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         robot.DriveLeftFront.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-        robot.armMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        robot.armMotor2.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+//        robot.armMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+//        robot.armMotor2.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
 
         waitForStart();
 
@@ -51,21 +51,197 @@ public class Team4008TeleOp2024 extends LinearOpMode {
             robot.DriveRightFront.setPower(rightPower * mag);
 
             telemetry.update();
-            boolean ArmSlow = gamepad2.left_bumper;
-            double slow = ArmSlow ? 0.55 : 1;
-            boolean ArmSuperSlow = gamepad2.right_bumper;
-            double slower = ArmSuperSlow ? 0.5 : 1;
-            double armPower = gamepad2.left_stick_y;
+//            boolean ArmSlow = gamepad2.left_bumper;
+//            double slow = ArmSlow ? 0.6 : 1;
+//            boolean ArmSuperSlow = gamepad2.right_bumper;
+//            double slower = ArmSuperSlow ? 0.5 : 1;/
+//            double armPower = gamepad2.left_stick_y;
 
-            robot.armMotor.setPower(armPower * slow * slower);
-            robot.armMotor2.setPower(-armPower * slow * slower);
+//            robot.armMotor.setPower(armPower * slow * slower * 0.8);
+//            robot.armMotor2.setPower(-armPower * slow * slower * 0.8);
+//
+//            if(gamepad2.x){
+//                robot.intakeL.setPower(1);
+//                robot.intakeR.setPower(1);
+//            }
+//            robot.intakeL.setPower(0);
+//            robot.intakeR.setPower(0);
 
-            if(gamepad2.x){
-                robot.intakeL.setPower(1);
-                robot.intakeR.setPower(-1);
-            }
-            robot.intakeL.setPower(0);
-            robot.intakeR.setPower(0);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

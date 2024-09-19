@@ -18,10 +18,10 @@ public class Team4008HM2024 {
 
     public DcMotor armMotor = null;
     public DcMotor armMotor2 = null;
-
-    public CRServo intakeL = null;
-
-    public CRServo intakeR = null;
+//
+  //  public CRServo intakeL = null;
+//
+    //public CRServo intakeR = null;
     /*public DcMotor Turret = null;
     public DcMotor Elevator = null;
 
@@ -46,11 +46,10 @@ public class Team4008HM2024 {
         DriveRightFront = hwMap.get(DcMotor.class,"DriveRightFront");
 
         armMotor = hwMap.get(DcMotor.class,"armMotor");
-        armMotor2 = hwMap.get(DcMotor.class,"armMotor");
+        armMotor2 = hwMap.get(DcMotor.class,"armMotor2");
        // DriveLeftBack = hwMap.get(DcMotor.class,"DriveLeftBack");
        // DriveRightBack = hwMap.get(DcMotor.class,"DriveRightBack");
         //   Lights = hwMap.get(RevBlinkinLedDriver.class,"Lights");
-
         DriveLeftFront.setDirection(DcMotor.Direction.FORWARD);
         DriveLeftFront.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         DriveLeftFront.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
@@ -67,8 +66,8 @@ public class Team4008HM2024 {
         armMotor2.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         armMotor2.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
 
-        intakeL = hwMap.get(CRServo.class, "intakeL");
-        intakeR = hwMap.get(CRServo.class, "intakeR");
+//        intakeL = hwMap.get(CRServo.class, "intakeL");
+//        intakeR = hwMap.get(CRServo.class, "intakeR");
 
        /* DriveLeftBack.setDirection(DcMotor.Direction.FORWARD);
         DriveLeftBack.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
@@ -91,7 +90,7 @@ public class Team4008HM2024 {
         IntakeLeft = hwMap.get(Servo.class, "Servo1");
 
         Arm = hwMap.get(DcMotor.class, "Arm");
-
+gfg
         ColorSensor = hwMap.get(NormalizedColorSensor.class, "sensor");*/
 
     }
